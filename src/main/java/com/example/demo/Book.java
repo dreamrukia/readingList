@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Book {
 	@Id // 说明是实体的唯一标识
 	@GeneratedValue(strategy=GenerationType.AUTO) // 说明字段是自动生成
-	private Long Id;
+	private Long id;
 	private String reader;
 	private String isbn;
 	private String title;
@@ -17,10 +17,10 @@ public class Book {
 	private String description;
 	
 	public Long getId() {
-		return Id;
+		return id;
 	}
 	public void setId(Long id) {
-		Id = id;
+		this.id = id;
 	}
 	public String getReader() {
 		return reader;
